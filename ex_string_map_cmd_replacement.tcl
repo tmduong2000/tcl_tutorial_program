@@ -6,6 +6,7 @@ package require Tcl 8.4
 # author: Tuyen M. Duong (tmduong2000@yahoo.com)
 # website: http://www.tduongsj.com
 # date: 2014-11-18
+# copyright @ 2104 Tuyen M. Duong (http://www.tduongsj.com) . All rights reserved.
 #
 
 proc funct_getYear {} {
@@ -26,7 +27,8 @@ proc funct_getYearString {year {type 0}} {
 }
 
 
-proc check_string_map_cmd_replacement {data mapKey replaceStr expected_elements checkType {isHardCode 0}} {
+proc check_string_map_cmd_replacement {data mapKey replaceStr\
+	expected_elements checkType {isHardCode 0}} {
 
 	if {$isHardCode} {
 		# assume data is: This year is 2014.
